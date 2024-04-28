@@ -1,0 +1,40 @@
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+/* ****************** HEADER ****************** */
+.header-wraper {
+  position: relative;
+  background-image: url("../../assets/wall-and-laptop-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .main-info {
+    font-size: 1.7rem !important;
+  }
+
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}

@@ -6,3 +6,16 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
+
+#particles canvas {
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  #particles {
+    display: none;
+  }
+}
