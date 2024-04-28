@@ -1,0 +1,51 @@
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+/*************************************** NAVBAR /***************************************/
+nav {
+  z-index: 2;
+}
+.logo {
+  width: 6rem;
+}
+
+/* --------------------- MENU LINKS --------------------- */
+nav a.nav-link {
+  font-style: 0.8rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin: 0 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.178rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.178rem solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.178rem solid var(--primary-orange);
+}
