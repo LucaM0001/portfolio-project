@@ -1,0 +1,30 @@
+.contact {
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: rgba(0, 0, 0, 0.87);
+  height: 90vh;
+}
+
+input,
+textarea {
+  background-color: transparent !important;
+  border: none !important;
+  color: white !important;
+  border-bottom: 2px solid white !important;
+}
+
+label {
+  color: gray;
+  font-weight: bold;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white !important;
+}
+
+textarea {
+  resize: none;
+  height: 18.5rem;
+}

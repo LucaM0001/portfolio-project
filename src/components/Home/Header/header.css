@@ -7,7 +7,7 @@
 /* ****************** HEADER ****************** */
 .header-wraper {
   position: relative;
-  background-image: url("../../assets/wall-and-laptop-background.jpg");
+  background-image: url("../../../assets/wall-and-laptop-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

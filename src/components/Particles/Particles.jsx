@@ -80,7 +80,7 @@ const ParticlesComponent = (props) => {
           density: {
             enable: false,
           },
-          value: 30,
+          value: 40,
         },
         opacity: {
           value: 1.0,
@@ -89,7 +89,7 @@ const ParticlesComponent = (props) => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 3 },
+          value: { min: 2, max: 4 },
         },
       },
       detectRetina: true,

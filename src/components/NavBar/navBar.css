@@ -44,6 +44,7 @@ nav ul li {
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus {
   border-top: 0.178rem solid var(--primary-orange);
+  font-weight: bold;
 }
 
 .navbar-nav > li > a:hover {

@@ -1,5 +1,7 @@
 import { ReactTyped } from "react-typed";
 import "./header.css";
+import { Link } from "react-bootstrap-icons";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -20,9 +22,13 @@ const Header = () => {
           backSpeed={60}
           loop
         />
-        <a href="#" className="btn btn-outline-danger text-uppercase">
+
+        <NavLink
+          to="/contacts"
+          className="btn btn-outline-danger text-uppercase"
+        >
           contact
-        </a>
+        </NavLink>
       </div>
     </div>
   );
