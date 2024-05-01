@@ -1,6 +1,7 @@
 import * as Icons from "react-bootstrap-icons";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import emailJS from "../../../lib/emailJS";
 
 const ContactForm = () => {
   const {
@@ -14,27 +15,7 @@ const ContactForm = () => {
       setTimeout(resolve, 1000);
     });
 
-    const serviceId = "service_0847tkl";
-    const templateId = "template_1bh06yb";
-    const publicKey = "jWAXqiGmvGwP_3CuE";
-
-    const templateParams = {
-      from_name: data.name,
-      phoneNumber: data.phoneNumber,
-      from_email: data.email,
-      to_name: "Luca Mamitiana",
-      subject: data.subject,
-      message: data.message,
-    };
-
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("Email send successfully!", response);
-      })
-      .catch((error) => {
-        console.log("Error sending email", error);
-      });
+    emailJS(data);
   };
 
   return (
