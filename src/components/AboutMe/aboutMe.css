@@ -1,7 +1,23 @@
 .about-me {
-  padding-top: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: 3rem;
   background-color: rgba(0, 0, 0, 0.87);
   height: 90vh;
+}
+
+#profile {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#profile img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.description p {
+  color: white;
+  text-align: justify;
 }
